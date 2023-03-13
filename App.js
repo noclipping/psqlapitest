@@ -22,7 +22,7 @@ app.use('/trainings', router);
 
 app.listen(process.env.PORT || port, ()=>{
   console.log('App listening on port '+port);
-  console.log(connectionString,'connstring')
+ // console.log(connectionString,'connstring')
 })
 
 export {pool}
