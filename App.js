@@ -19,7 +19,7 @@ app.get('/:id', (req,res)=>{
 
 app.use('/trainings', router);
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
   console.log('App listening on port '+port);
 })
 
