@@ -1,8 +1,9 @@
 import PG from 'pg';
 import express from 'express';
 import {router} from './routes/trainings.js'
-const connectionString = "postgres://txgqvytx:rV4ppwQ8UYgoprY8fNPDpjMHUqOz1J-s@jelani.db.elephantsql.com/txgqvytx"
-
+// const connectionString = "postgres://txgqvytx:rV4ppwQ8UYgoprY8fNPDpjMHUqOz1J-s@jelani.db.elephantsql.com/txgqvytx"
+//const connectionString = "postgresql://postgres:RmgtRr8idNfBHnWliOlB@containers-us-west-169.railway.app:6853/railway"
+const connectionString = process.env.DATABASE_URL
 const pool = new PG.Pool({
   connectionString
 })
